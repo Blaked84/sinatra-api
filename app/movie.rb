@@ -1,17 +1,7 @@
 require 'json'
+require_relative './data.rb'
 
-class Movie
+class Movie < Data
 
-  DATA_FILE_PATH = File.join(File.dirname(__FILE__), './../data.json')
-
-  def self.all
-    file = File.read(DATA_FILE_PATH)
-    data_hash = JSON.parse(file)
-    data_hash['movies']
-  end
-
-  def self.find(id)
-    all.select{ |hash, key| hash['id'] == id }.first
-  end
 end
 
