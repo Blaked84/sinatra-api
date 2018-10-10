@@ -24,6 +24,17 @@ RSpec.describe Api do
     expect(last_response.body).to include 'The General'
   end
 
+  # it 'returns the list of director' do
+  #   get '/directors'
+  #   expect(last_response.body).to include 'Charlie Chaplin'
+  #   expect(last_response.body).to include 'Alfred Hitchcock'
+  # end
+
+  # it 'returns a specific director' do
+  #   get '/directors/3'
+  #   expect(last_response.body).to include 'Charlie Chaplin'
+  # end
+
   # Your turn to write the next spec!
 
 end
